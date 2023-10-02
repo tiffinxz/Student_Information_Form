@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Management System</title>
+    <link rel="stylesheet" href="info.css">
+</head>
+<body>
+    <div id="div1">
+    <header>
+        <h1>Student Information Management System<img src="logo2.jpg"></h1>
+    </header>
+    <main>
+        <section id="student-form">
+            <h2>Add Student</h2>
+            <form id="studentinfoform"  action="info.php" method="post">
+                
+                <input type="text" id="name" name="name" placeholder="Student Name" required>
+                <input type="text" id="sid" name="sid" placeholder="Student ID" required>
+                <input type="email" id="email" name="email" placeholder="Student Email" required>
+                <input type="text" id="department" name="department" placeholder="Department">
+
+                <button type="submit">Add Student</button>
+            </form>
+        </section>
+        <section id="student-list">
+            <h2>Student List</h2>
+            <ul id="student-list-ul">
+               
+            </ul>
+        </section>
+    </main>
+</div>
+    <script src="info.js"></script>
+</body>
+</html>
